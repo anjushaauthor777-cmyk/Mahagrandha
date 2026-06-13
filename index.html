@@ -1,272 +1,74 @@
-```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mahagrandha Technologies</title>
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, sans-serif;
-    background:#f5f7fa;
-    color:#333;
-    line-height:1.6;
-}
-
-header{
-    background:linear-gradient(135deg,#1e3a8a,#0f172a);
-    color:white;
-    text-align:center;
-    padding:80px 20px;
-}
-
-header h1{
-    font-size:48px;
-    margin-bottom:15px;
-}
-
-header p{
-    font-size:22px;
-    max-width:800px;
-    margin:auto;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:25px;
-    background:#d4af37;
-    color:white;
-    text-decoration:none;
-    padding:14px 30px;
-    border-radius:6px;
-    font-weight:bold;
-}
-
-.btn:hover{
-    background:#b8941f;
-}
-
-nav{
-    background:#1e3a8a;
-    text-align:center;
-    padding:15px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 20px;
-    font-weight:bold;
-}
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    padding:40px 0;
-}
-
-.section{
-    background:white;
-    padding:40px;
-    margin-bottom:25px;
-    border-radius:12px;
-    box-shadow:0 2px 12px rgba(0,0,0,0.08);
-}
-
-h2{
-    color:#1e3a8a;
-    margin-bottom:20px;
-}
-
-.services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:#f8fafc;
-    padding:25px;
-    border-top:4px solid #d4af37;
-    border-radius:8px;
-}
-
-.card h3{
-    color:#1e3a8a;
-    margin-bottom:10px;
-}
-
-.why-us ul{
-    padding-left:20px;
-}
-
-.portfolio-item{
-    margin-bottom:20px;
-}
-
-.contact{
-    text-align:center;
-}
-
-footer{
-    background:#1e3a8a;
-    color:white;
-    text-align:center;
-    padding:25px;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-    <h1>Mahagrandha Technologies</h1>
+<nav>
+<div class="logo">Mahagrandha</div>
 
-    <p>
-        Transforming Complex Information into Clear,
-        Structured, and User-Friendly Documentation.
-    </p>
-
-    <a href="#contact" class="btn">Request a Consultation</a>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
 </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<div class="container">
-
-<section id="about" class="section">
-    <h2>About Us</h2>
-
-    <p>
-        Mahagrandha Technologies is a professional documentation and
-        knowledge management services company helping organizations
-        create clear, accurate, and effective documentation.
-    </p>
-
-    <br>
-
-    <p>
-        Founded by Anjusha Sudheesh, a Technical Writer with over
-        9 years of industry experience, Mahagrandha Technologies
-        specializes in software documentation, knowledge management,
-        process documentation, API documentation, and user assistance content.
-    </p>
+<section class="hero">
+<div class="hero-content">
+<h1>Mahagrandha Technologies</h1>
+<p>Bridging Technology and Understanding</p>
+<a href="services.html" class="btn">Explore Services</a>
+</div>
 </section>
 
-<section id="services" class="section">
-    <h2>Our Services</h2>
+<section class="section">
+<h2 class="section-title">Who We Are</h2>
 
-    <div class="services">
-
-        <div class="card">
-            <h3>Technical Documentation</h3>
-            <p>Comprehensive documentation for software products and enterprise applications.</p>
-        </div>
-
-        <div class="card">
-            <h3>User Guides</h3>
-            <p>Easy-to-follow guides that help users understand and use products effectively.</p>
-        </div>
-
-        <div class="card">
-            <h3>API Documentation</h3>
-            <p>Developer-focused API documentation with examples and integration guidance.</p>
-        </div>
-
-        <div class="card">
-            <h3>Knowledge Base</h3>
-            <p>Structured articles, FAQs, and troubleshooting guides for self-service support.</p>
-        </div>
-
-        <div class="card">
-            <h3>Process Documentation</h3>
-            <p>Business workflows, SOPs, operational procedures, and process guides.</p>
-        </div>
-
-        <div class="card">
-            <h3>Training Materials</h3>
-            <p>Learning resources and onboarding materials for employees and customers.</p>
-        </div>
-
-    </div>
+<p>
+Mahagrandha Technologies helps businesses create clear,
+accurate and user-focused documentation. We transform
+complex technical information into practical knowledge
+that users can easily understand and apply.
+</p>
 </section>
 
-<section class="section why-us">
-    <h2>Why Choose Mahagrandha Technologies?</h2>
+<section class="section">
+<h2 class="section-title">Our Expertise</h2>
 
-    <ul>
-        <li>9+ Years of Technical Writing Experience</li>
-        <li>Strong Software and Enterprise Documentation Expertise</li>
-        <li>Experience in Banking, Finance, and Technology Domains</li>
-        <li>User-Centric Documentation Approach</li>
-        <li>Clear, Structured, and Consistent Content</li>
-        <li>Commitment to Quality and Accuracy</li>
-    </ul>
-</section>
+<div class="cards">
 
-<section id="portfolio" class="section">
-    <h2>Portfolio Highlights</h2>
-
-    <div class="portfolio-item">
-        <h3>Banking & Financial Documentation</h3>
-        <p>User guides, process documentation, and operational documentation.</p>
-    </div>
-
-    <div class="portfolio-item">
-        <h3>Knowledge Base Solutions</h3>
-        <p>FAQs, troubleshooting guides, and self-service support content.</p>
-    </div>
-
-    <div class="portfolio-item">
-        <h3>Software Product Documentation</h3>
-        <p>Feature documentation, release notes, and product guides.</p>
-    </div>
-
-    <div class="portfolio-item">
-        <h3>Business Process Documentation</h3>
-        <p>SOPs, workflows, and operational procedures.</p>
-    </div>
-</section>
-
-<section id="contact" class="section contact">
-    <h2>Contact Us</h2>
-
-    <p>
-        Looking for professional documentation services?
-    </p>
-
-    <br>
-
-    <a class="btn"
-       href="https://www.linkedin.com/in/anjusha-k-mohan-546042106"
-       target="_blank">
-       Connect on LinkedIn
-    </a>
-</section>
-
+<div class="card">
+<h3>Technical Documentation</h3>
+<p>Comprehensive software and product documentation.</p>
 </div>
 
+<div class="card">
+<h3>User Guides</h3>
+<p>Easy-to-follow instructions for end users.</p>
+</div>
+
+<div class="card">
+<h3>API Documentation</h3>
+<p>Developer-friendly API references and guides.</p>
+</div>
+
+<div class="card">
+<h3>SOP Documentation</h3>
+<p>Structured business process documentation.</p>
+</div>
+
+</div>
+</section>
+
 <footer>
-    <p>
-        © 2026 Mahagrandha Technologies | Transforming Knowledge into Clarity
-    </p>
+<p>© 2026 Mahagrandha Technologies</p>
 </footer>
 
 </body>
 </html>
-```
